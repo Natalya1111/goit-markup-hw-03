@@ -10,7 +10,6 @@
   --second-accent-color: #188ce8;
 }
 body {
-  width: 1600px;
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -36,11 +35,10 @@ button {
 }
 
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 /*Logo*/
@@ -98,6 +96,7 @@ ul {
 
 .logo-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
@@ -110,8 +109,6 @@ ul {
 
 .site-nav .link {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: var(--title-text-color);
   background-color: var(--second-text-color);
   font-weight: 500;
@@ -131,7 +128,7 @@ ul {
 
 .contact.list {
   display: flex;
-  margin-left: 331px;
+  margin-left: auto;
 }
 
 .contact.list .item + .item {
@@ -209,7 +206,6 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: var(--third-background-color);
 }
 .benefits {
   padding-bottom: 0px;
@@ -260,6 +256,10 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.plus {
+  width: 270px;
+}
+
 .text {
   font-size: 14px;
 }
@@ -367,15 +367,17 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 }
 
 .project {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  padding-right: 24px;
   background-color: var(--second-text-color);
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 /* Footer */
@@ -412,6 +414,9 @@ footer {
 }
 .address .link.map {
   color: var(--second-text-color);
+}
+.address .visit:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /*Основной текст #E5E5E5
